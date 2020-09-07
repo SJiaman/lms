@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block title %}404{% endblock %}
+{% block content %}
+<!-- Preloader -->
+<div class="preloader"></div>
+<!-- Error Section -->
+<section class="error-section" style="background-image:url(images/background/pattern-4.png)">
+    <div class="auto-container">
+        <div class="content">
+            <div class="content-inner">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo-2.png" alt="" /></a>
+                </div>
+                <div class="image">
+                    <img src="images/resource/error.png" alt="" />
+                </div>
+                <h1>404</h1>
+                <div class="text">Something went wrong</div>
+                <a href="/" class="theme-btn btn-style-one"><span class="txt">Back To Homepage</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Error Section -->
+{% endblock %}
+

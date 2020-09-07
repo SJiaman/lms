@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Result{% endblock %}
+{% block content %}
+<!-- Preloader -->
+<div class="preloader"></div>
+
+<!-- Result Section -->
+<div class="result-section">
+    <div class="auto-container">
+        <div class="inner-container">
+            <!-- Sec Title -->
+            <div class="sec-title centered">
+                <h4>Quiz Result</h4>
+            </div>
+            <ul class="result-options">
+                <li><span class="icon flaticon-check-1"></span>Right <i>(25)</i></li>
+                <li><span class="icon flaticon-close"></span>Wrong <i>(05)</i></li>
+                <li><span class="icon number">25</span>Out Of <i>(30)</i></li>
+            </ul>
+            <h2>Congratulation! Jonathon Deo</h2>
+            <a href="#" class="theme-btn btn-style-one"><span class="txt">Download Certificate</span></a>
+        </div>
+    </div>
+</div>
+<!-- End Result Section -->
+{% endblock %}
+	

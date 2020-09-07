@@ -1,0 +1,488 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}图书馆管理系统{% endblock %}
+{% block content %}
+<!-- Sidebar Page Container -->
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row clearfix">
+        <!-- Sidebar Side -->
+        <div class="sidebar-side left-sidebar col-lg-3 col-md-12 col-sm-12">
+            <aside class="sidebar sticky-top">
+
+                <!-- Categories Widget -->
+                <div class="sidebar-widget categories-widget">
+                    <div class="widget-content">
+                        <div class="sidebar-title">
+                            <h6>热门书籍</h6>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="#">平凡的世界</a></li>
+                                <li><a href="#">算法</a></li>
+                                <li><a href="#">数据结构</a></li>
+                                <li><a href="#">数据库系统概论</a></li>
+                                <li><a href="#">计算机系统</a></li>
+                                <li><a href="#">计算机网络</a></li>
+                                <li><a href="#">操作系统</a></li>
+                                <li><a href="#">软件工程</a></li>
+                            </ul>
+                            <a href="" class="all-category">更多</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Widget -->
+                <div class="sidebar-widget featured-widget">
+                    <div class="widget-content">
+                        <div class="sidebar-title">
+                            <h6>热点资讯</h6>
+                        </div>
+                        <div class="content">
+                            <div class="featured-carousel owl-carousel owl-theme">
+
+                                <!-- Feature Block -->
+                                <div class="featured-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <a href="profile.html" class="overlay-link"></a>
+                                            <img src="{% static 'book/images/resource/feature-1.jpg' %}" alt="" />
+                                            <!-- Overlay Box -->
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="overlay-content">
+                                                        <!-- Author Image -->
+                                                        <div class="author-image">
+                                                            <img src="{% static 'book/images/resource/author-5.jpg' %}" alt="" />
+                                                        </div>
+                                                        <div class="name">××××××××××××××</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Feature Block -->
+                                <div class="featured-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <a href="profile.html" class="overlay-link"></a>
+                                            <img src="{% static 'book/images/resource/feature-2.jpg' %}" alt="" />
+                                            <!-- Overlay Box -->
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="overlay-content">
+                                                        <!-- Author Image -->
+                                                        <div class="author-image">
+                                                            <img src="{% static 'book/images/resource/author-6.jpg' %}" alt="" />
+                                                        </div>
+                                                        <div class="name">××××××××××××××</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Feature Block -->
+                                <div class="featured-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <a href="profile.html" class="overlay-link"></a>
+                                            <img src="{% static 'book/images/resource/feature-3.jpg' %}" alt="" />
+                                            <!-- Overlay Box -->
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="overlay-content">
+                                                        <!-- Author Image -->
+                                                        <div class="author-image">
+                                                            <img src="{% static 'book/images/resource/author-7.jpg' %}" alt="" />
+                                                        </div>
+                                                        <div class="name">××××××××××××××</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Feature Block -->
+                                <div class="featured-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <a href="profile.html" class="overlay-link"></a>
+                                            <img src="{% static 'book/images/resource/feature-1.jpg' %}" alt="" />
+                                            <!-- Overlay Box -->
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="overlay-content">
+                                                        <!-- Author Image -->
+                                                        <div class="author-image">
+                                                            <img src="{% static 'book/images/resource/author-5.jpg' %}" alt="" />
+                                                        </div>
+                                                        <div class="name">××××××××××××××</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Feature Block -->
+                                <div class="featured-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <a href="profile.html" class="overlay-link"></a>
+                                            <img src="{% static 'book/images/resource/feature-2.jpg' %}" alt="" />
+                                            <!-- Overlay Box -->
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="overlay-content">
+                                                        <!-- Author Image -->
+                                                        <div class="author-image">
+                                                            <img src="{% static 'book/images/resource/author-6.jpg' %}" alt="" />
+                                                        </div>
+                                                        <div class="name">××××××××××××××</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Feature Block -->
+                                <div class="featured-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <a href="profile.html" class="overlay-link"></a>
+                                            <img src="{% static 'book/images/resource/feature-3.jpg' %}" alt="" />
+                                            <!-- Overlay Box -->
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="overlay-content">
+                                                        <!-- Author Image -->
+                                                        <div class="author-image">
+                                                            <img src="{% static 'book/images/resource/author-7.jpg' %}" alt="" />
+                                                        </div>
+                                                        <div class="name">××××××××××××××</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+
+        <!-- Content Side -->
+        <div class="content-side right-sidebar col-lg-9 col-md-12 col-sm-12">
+            <!-- Sec Title -->
+            <div class="sec-title">
+                <div class="clearfix">
+                    <div class="pull-left">
+                        <h4>书籍推荐</h4>
+                    </div>
+                    <div class="pull-right">
+                        <a href="featured-courses.html" class="see-all">更多</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Section -->
+            <div class="featured-section">
+                <div class="row clearfix">
+
+                    <!-- Feature Block Two -->
+                    <div class="feature-block-two col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content">
+                                <div class="image">
+                                    <a href="course-lesson.html"><img src="{% static 'book/images/resource/feature-4.jpg' %}" alt="" /></a>
+                                </div>
+                                <h6><a href="course-lesson.html">平凡的世界</a></h6>
+                                <div class="text">《平凡的世界(套装共3册)》是一部现实主义小说，也是小说化的家族史。作家高度浓缩了中国西北农村的历史变迁过程，作品达到了思想性与艺术性的高度统一，特别是主人公面对困境艰苦奋斗的精神，对今天的大学生朋友仍有启迪。</div>
+                                <div class="author">作者: <span>路遥</span></div>
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="dark fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Featured Dropdown Box -->
+                                <div class="eps_dots more_dropdown">
+                                    <a href="#"><span></span><i></i></a>
+                                    <div class="dropdown-content">
+                                        <span><i class='flaticon-share'></i>Share</span>
+                                        <span><i class="flaticon-down-arrow-1"></i>Save</span>
+                                        <span><i class='flaticon-cancel'></i>Not Interested</span>
+                                        <span><i class="flaticon-edit-2"></i>Report</span>
+                                     </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature Block Two -->
+                    <div class="feature-block-two col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content">
+                                <div class="image">
+                                    <a href="course-lesson.html"><img src="{% static 'book/images/resource/feature-5.jpg' %}" alt="" /></a>
+                                </div>
+                                <h6><a href="course-lesson.html">人性的弱点</a></h6>
+                                <div class="text">《人性的弱点》作为卡耐基最成功的励志经典，荟萃了卡耐基思想理论最精华的部分。几十年间被翻译成全世界几乎所有的主要语言，全球总销量已达1.5亿余册，被视为社交心理和沟通技巧的“圣经”。它改变了千千万万人的命运。</div>
+                                <div class="author">作者: <span>卡耐基</span></div>
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="dark fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Featured Dropdown Box -->
+                                <div class="eps_dots more_dropdown">
+                                    <a href="#"><span></span><i></i></a>
+                                    <div class="dropdown-content">
+                                        <span><i class='flaticon-share'></i>Share</span>
+                                        <span><i class="flaticon-down-arrow-1"></i>Save</span>
+                                        <span><i class='flaticon-cancel'></i>Not Interested</span>
+                                        <span><i class="flaticon-edit-2"></i>Report</span>
+                                     </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature Block Two -->
+                    <div class="feature-block-two col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content">
+                                <div class="image">
+                                    <a href="course-lesson.html"><img src="{% static 'book/images/resource/feature-6.jpg' %}" alt="" /></a>
+                                </div>
+                                <h6><a href="course-lesson.html">明朝那些事</a></h6>
+                                <div class="text">讲述从1344年到1644年，明朝三百年间的历史。作品以史料为基础，以年代和具体人物为主线，运用小说的笔法，对明朝十七帝和其他王公权贵和小人物的命运进行全景展示，尤其对官场政治、战争、帝王心术着墨最多。作品也是一部明朝政治经济制度、人伦道德的演义。</div>
+                                <div class="author">作者: <span>当年明月</span></div>
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="dark fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Featured Dropdown Box -->
+                                <div class="eps_dots more_dropdown">
+                                    <a href="#"><span></span><i></i></a>
+                                    <div class="dropdown-content">
+                                        <span><i class='flaticon-share'></i>Share</span>
+                                        <span><i class="flaticon-down-arrow-1"></i>Save</span>
+                                        <span><i class='flaticon-cancel'></i>Not Interested</span>
+                                        <span><i class="flaticon-edit-2"></i>Report</span>
+                                     </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature Block Two -->
+                    <div class="feature-block-two col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content">
+                                <div class="image">
+                                    <a href="course-lesson.html"><img src="{% static 'book/images/resource/feature-7.jpg' %}" alt="" /></a>
+                                </div>
+                                <h6><a href="course-lesson.html">百年孤独</a></h6>
+                                <div class="text">《百年孤独》是魔幻现实主义文学的代表作，描写了布恩迪亚家族七代人的传奇故事，以及加勒比海沿岸小镇马孔多的百年兴衰，反映了拉丁美洲一个世纪以来风云变幻的历史。作品融入神话传说、民间故事、宗教典故等神秘因素，巧妙地糅合了现实与虚幻，</div>
+                                <div class="author">作者: <span>加西亚·马尔克斯</span></div>
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <div class="rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="dark fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Featured Dropdown Box -->
+                                <div class="eps_dots more_dropdown">
+                                    <a href="#"><span></span><i></i></a>
+                                    <div class="dropdown-content">
+                                        <span><i class='flaticon-share'></i>Share</span>
+                                        <span><i class="flaticon-down-arrow-1"></i>Save</span>
+                                        <span><i class='flaticon-cancel'></i>Not Interested</span>
+                                        <span><i class="flaticon-edit-2"></i>Report</span>
+                                     </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Featured Section -->
+
+            <!-- Team Section -->
+            <div class="team-section">
+                <!-- Sec Title -->
+                <div class="sec-title">
+                    <div class="clearfix">
+                        <div class="pull-left">
+                            <h4>阅读之星</h4>
+                        </div>
+                        <div class="pull-right">
+                            <a href="team.html" class="see-all">更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+
+                    <!-- Team Block -->
+                    <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="profile.html"><img src="{% static 'book/images/resource/team-1.jpg' %}" alt="" /></a>
+                            </div>
+                            <div class="name"><a href="profile.html">张三</a></div>
+                            <div class="designation">文学181,文学与传媒学院 </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Block -->
+                    <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="profile.html"><img src="{% static 'book/images/resource/team-2.jpg' %}" alt="" /></a>
+                            </div>
+                            <div class="name"><a href="profile.html">李四</a></div>
+                            <div class="designation">文学181,文学与传媒学院 </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Block -->
+                    <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="profile.html"><img src="{% static 'book/images/resource/team-3.jpg' %}" alt="" /></a>
+                            </div>
+                            <div class="name"><a href="profile.html">赵五</a></div>
+                            <div class="designation">文学181,文学与传媒学院 </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Block -->
+                    <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="profile.html"><img src="{% static 'book/images/resource/team-4.jpg' %}" alt="" /></a>
+                            </div>
+                            <div class="name"><a href="profile.html">王六</a></div>
+                            <div class="designation">文学181,文学与传媒学院 </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Team Section -->
+
+            <!-- Testimonial Section -->
+            <div class="testimonial-section">
+                <!-- Sec Title -->
+                <div class="sec-title">
+                    <h4>名人名言</h4>
+                </div>
+                <div class="testimonial-carousel owl-carousel owl-theme">
+
+                    <!-- Testimonial Block -->
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <div class="quote flaticon-quote"></div>
+                            <div class="image">
+                                <img src="{% static 'book/images/resource/author-8.jpg' %}" alt="" />
+                            </div>
+                            <div class="name">伏尔泰</div>
+                            <div class="text">不经巨大的困难，不会有伟大的事业</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Block -->
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <div class="quote flaticon-quote"></div>
+                            <div class="image">
+                                <img src="{% static 'book/images/resource/author-9.jpg' %}" alt="" />
+                            </div>
+                            <div class="name">卡耐基</div>
+                            <div class="text">一个不注意小事情的人，永远不会成就大事业</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Block -->
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <div class="quote flaticon-quote"></div>
+                            <div class="image">
+                                <img src="{% static 'book/images/resource/author-8.jpg' %}" alt="" />
+                            </div>
+                            <div class="name">爱迪生</div>
+                            <div class="text">失败也是我需要的，它和成功对我一样有价值。</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Block -->
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <div class="quote flaticon-quote"></div>
+                            <div class="image">
+                                <img src="{% static 'book/images/resource/author-8.jpg' %}" alt="" />
+                            </div>
+                            <div class="name">罗曼罗兰</div>
+                            <div class="text">世界上只有一种真正的英雄主义，那就是在认识生活的真相后依然热爱生活。</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Testimonial Section -->
+
+        </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+
+
+{% endblock %}
+

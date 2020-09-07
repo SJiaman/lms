@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block title %}个人中心{% endblock %}
+{% block content %}
+<!-- Instructor Page Section -->
+<div class="instructor-page-section">
+    <div class="auto-container">
+        <div class="upper-content">
+            <div class="row clearfix">
+
+                <!-- Left Column -->
+                <div class="left-column col-lg-9 col-md-12 col-sm-12">
+                    <!-- Content -->
+                    <div class="content">
+                        <!-- Author Image -->
+                        <div class="author-image">
+                            <img src="{% static 'book/images/resource/author-12.jpg' %}" alt="" />
+                        </div>
+                        <h4>张三</h4>
+                        <div class="designation">世界上只有一种真正的英雄主义，那就是在认识生活的真相后依然热爱生活。</div>
+
+                        <!-- Fact Counter -->
+                        <div class="fact-counter">
+                            <div class="row clearfix">
+
+                                <!-- Column -->
+                                <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="inner">
+                                        <h5 class="counter-title">已借阅</h5>
+                                        <div class="count-outer count-box">
+                                            <span class="count-text" data-speed="2500" data-stop="21">0</span>k
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Column -->
+                                <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="inner">
+                                        <h5 class="counter-title">带归还</h5>
+                                        <div class="count-outer count-box">
+                                            <span class="count-text" data-speed="3000" data-stop="15">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Column -->
+                                <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="inner">
+                                        <h5 class="counter-title">总借阅</h5>
+                                        <div class="count-outer count-box">
+                                            <span class="count-text" data-speed="3000" data-stop="100">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Right Column -->
+                <div class="right-column col-lg-3 col-md-12 col-sm-12">
+                    <div class="buttons-box">
+                        <a href="{% url 'book:setting' %}" class="theme-btn btn-style-one"><span class="txt"><i class="flaticon-settings-1"></i>信息修改</span></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Lower Content -->
+        <div class="lower-content">
+
+            <!-- Instructor Info Tabs-->
+            <div class="instructor-info-tabs">
+                <!-- Instructor Tabs-->
+                <div class="instructor-tabs tabs-box">
+
+                    <!-- Tab Btns -->
+                    <ul class="tab-btns tab-buttons clearfix">
+                        <li data-tab="#prod-about" class="active-btn tab-btn">关于我</li>
+                        <li data-tab="#prod-courses" class="tab-btn">借阅详情</li>
+                        <li data-tab="#prod-purchased" class="tab-btn">个人资料</li>
+                        <li data-tab="#prod-discussion" class="tab-btn">我的笔记</li>
+                    </ul>
+
+                    <!-- Tabs Container -->
+                    <div class="tabs-content">
+
+                        <!-- Tab / Active Tab -->
+                        <div class="tab active-tab" id="prod-about">
+                            <div class="content">
+                                <h6>关于我</h6>
+                                <div class="text">
+                                    <p>××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab  -->
+                        <div class="tab" id="prod-courses">
+                            <div class="content">
+                                <h6>借阅详情</h6>
+                                <div class="text">
+                                    <p>××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab  -->
+                        <div class="tab" id="prod-purchased">
+                            <div class="content">
+                               <h6>个人资料</h6>
+                                <div class="text">
+                                    <p>××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab  -->
+                        <div class="tab" id="prod-discussion">
+                            <div class="content">
+                               <h6>我的笔记</h6>
+                                <div class="text">
+                                    <p>××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- End Instructor Page Section -->
+{% endblock %}

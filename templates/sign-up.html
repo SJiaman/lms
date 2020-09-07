@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}注册{% endblock %}
+{% block content %}
+<div class="page-wrapper">
+	<!-- Sign Up Section -->
+    <section class="signup-section" style="background-image:url(images/background/pattern-4.png)">
+    	<div class="auto-container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo-3.png" alt="" />在线图书馆</a>
+			</div>
+        	<div class="inner-container">
+            	<!-- <h2>欢迎来到 <span class="theme_color">在线图书馆</span></h2>
+				<div class="text">登录开始阅读</div>
+				 -->
+				
+				<!-- Login Form -->
+				<div class="styled-form">
+					<form method="post" action="index.html">
+						
+						<div class="row clearfix">
+							
+							<!-- Form Group -->
+							<div class="form-group col-lg-6 col-md-12 col-sm-12">
+								<label>姓名</label>
+								<input type="text" name="username" value="" placeholder="姓名" required>
+							</div>
+							
+							<!-- Form Group -->
+							<div class="form-group col-lg-6 col-md-12 col-sm-12">
+								<label>学号/工号</label>
+								<input type="text" name="username" value="" placeholder="学号/工号" required>
+							</div>
+							
+							<!-- Form Group -->
+							<div class="form-group col-lg-6 col-md-12 col-sm-12">
+								<label>电话</label>
+								<input type="text" name="phone" value="" placeholder="+(86) 186~4567" required>
+							</div>
+							
+							<!-- Form Group -->
+							<div class="form-group col-lg-6 col-md-12 col-sm-12">
+								<label>邮箱</label>
+								<input type="email" name="email" value="" placeholder="abcd@gmail.com" required>
+							</div>
+							
+							<!-- Form Group -->
+							<div class="form-group col-lg-6 col-md-12 col-sm-12">
+								<label>密码</label>
+								<span class="eye-icon fa fa-eye"></span>
+								<input type="password" name="password" value="" placeholder="********" required>
+							</div>
+							
+							<!-- Form Group -->
+							<div class="form-group col-lg-6 col-md-12 col-sm-12">
+								<label>确认密码</label>
+								<span class="eye-icon fa fa-eye"></span>
+								<input type="password" name="password" value="" placeholder="********" required>
+							</div>
+							
+							
+							<div class="form-group col-lg-12 col-md-12 col-sm-12 text-center">
+								<button type="button" class="theme-btn btn-style-one"><span class="txt">立即注册</span></button>
+							</div>
+							
+							<div class="form-group col-lg-12 col-md-12 col-sm-12">
+								<div class="users">已有账号? <a href="login.html">登录</a></div>
+							</div>
+							
+						</div>
+						
+					</form>
+				</div>
+				
+            </div>
+			
+        </div>
+    </section>
+	<!-- End Sign Up Section -->
+
+{% endblock %}

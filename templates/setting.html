@@ -1,0 +1,389 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block title %}设置{% endblock %}
+{% block content %}
+<!-- Setting Section -->
+<div class="setting-section">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title">
+            <h4>Settings</h4>
+        </div>
+        <div class="inner-container">
+
+            <!-- Setting Info Tabs-->
+            <div class="setting-info-tabs">
+                <!-- Setting Tabs-->
+                <div class="setting-tabs tabs-box">
+
+                    <!-- Tab Btns -->
+                    <ul class="tab-btns tab-buttons clearfix">
+                        <li data-tab="#prod-amount" class="active-btn tab-btn">Account</li>
+                        <li data-tab="#prod-notification" class="tab-btn">Notification</li>
+                        <li data-tab="#prod-billing" class="tab-btn">Billing and Payments</li>
+                        <li data-tab="#prod-privacy" class="tab-btn">Privacy</li>
+                        <li data-tab="#prod-close" class="tab-btn">Close Account</li>
+                    </ul>
+
+                    <!-- Tabs Container -->
+                    <div class="tabs-content">
+
+                        <!-- Tab / Active Tab -->
+                        <div class="tab active-tab" id="prod-amount">
+                            <h6>About Me</h6>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                            <div class="content">
+                                <h6>Basic Information</h6>
+                                <div class="text">Add Information about yourself</div>
+
+                                <!-- Setting Form -->
+                                <div class="setting-form">
+                                    <!-- Setting Form -->
+                                    <form method="post" action="search.html">
+                                        <div class="row clearfix">
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                <input type="text" name="username" placeholder="Full Name*" required>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                <input type="email" name="email" placeholder="Email Address*" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <input type="text" name="username" placeholder="I am a UX/ UI Designer" required>
+                                                <label>Add a proffessional headline</label>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <textarea class="" name="message" placeholder="Write a description about you (Maximum 350 words)"></textarea>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group site-input">
+                                                <h6>Profile Links</h6>
+                                                <div class="link-name"><span class="icon fa fa-globe"></span> https://</div>
+                                                <input type="text" name="username" placeholder="yourcompany.mysite.net" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group youtube">
+                                                <div class="link-name"><span class="icon fa fa-youtube-play"></span> https://www.youtube.com/</div>
+                                                <input type="text" name="username" placeholder="Youtube Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group linkedin">
+                                                <div class="link-name"><span class="icon fa fa-linkedin"></span> https://www.linkedin.com/</div>
+                                                <input type="text" name="username" placeholder="LinkedIn Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group twitter">
+                                                <div class="link-name"><span class="icon fa fa-twitter-square"></span> https://www.twitter.com/</div>
+                                                <input type="text" name="username" placeholder="Twitter Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group facebook">
+                                                <div class="link-name"><span class="icon fa fa-twitter-square"></span> https://www.facebook.com/</div>
+                                                <input type="text" name="username" placeholder="Facebook Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Save Change</span></button>
+                                                <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span class="txt">Cancel</span></button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--End Comment Form -->
+
+                            </div>
+                        </div>
+
+                        <!-- Tab  -->
+                        <div class="tab" id="prod-notification">
+                            <h6>Notifications</h6>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                            <div class="content">
+                                <h6>Basic Information</h6>
+                                <div class="text">Add Information about yourself</div>
+
+                                <!-- Setting Form -->
+                                <div class="setting-form">
+                                    <!-- Setting Form -->
+                                    <form method="post" action="search.html">
+                                        <div class="row clearfix">
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                <input type="text" name="username" placeholder="Full Name*" required>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                <input type="email" name="email" placeholder="Email Address*" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <input type="text" name="username" placeholder="I am a UX/ UI Designer" required>
+                                                <label>Add a proffessional headline</label>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <textarea class="" name="message" placeholder="Write a description about you (Maximum 350 words)"></textarea>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group site-input">
+                                                <h6>Profile Links</h6>
+                                                <div class="link-name"><span class="icon fa fa-globe"></span> https://</div>
+                                                <input type="text" name="username" placeholder="yourcompany.mysite.net" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group youtube">
+                                                <div class="link-name"><span class="icon fa fa-youtube-play"></span> https://www.youtube.com/</div>
+                                                <input type="text" name="username" placeholder="Youtube Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group linkedin">
+                                                <div class="link-name"><span class="icon fa fa-linkedin"></span> https://www.linkedin.com/</div>
+                                                <input type="text" name="username" placeholder="LinkedIn Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group twitter">
+                                                <div class="link-name"><span class="icon fa fa-twitter-square"></span> https://www.twitter.com/</div>
+                                                <input type="text" name="username" placeholder="Twitter Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group facebook">
+                                                <div class="link-name"><span class="icon fa fa-twitter-square"></span> https://www.facebook.com/</div>
+                                                <input type="text" name="username" placeholder="Facebook Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Save Change</span></button>
+                                                <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span class="txt">Cancel</span></button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--End Comment Form -->
+
+                            </div>
+                        </div>
+
+                        <!-- Tab  -->
+                        <div class="tab" id="prod-billing">
+                            <h6>Billing And Payments</h6>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                            <div class="content">
+                                <h6>Basic Information</h6>
+                                <div class="text">Add Information about yourself</div>
+
+                                <!-- Setting Form -->
+                                <div class="setting-form">
+                                    <!-- Setting Form -->
+                                    <form method="post" action="search.html">
+                                        <div class="row clearfix">
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                <input type="text" name="username" placeholder="Full Name*" required>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                <input type="email" name="email" placeholder="Email Address*" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <input type="text" name="username" placeholder="I am a UX/ UI Designer" required>
+                                                <label>Add a proffessional headline</label>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <textarea class="" name="message" placeholder="Write a description about you (Maximum 350 words)"></textarea>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group site-input">
+                                                <h6>Profile Links</h6>
+                                                <div class="link-name"><span class="icon fa fa-globe"></span> https://</div>
+                                                <input type="text" name="username" placeholder="yourcompany.mysite.net" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group youtube">
+                                                <div class="link-name"><span class="icon fa fa-youtube-play"></span> https://www.youtube.com/</div>
+                                                <input type="text" name="username" placeholder="Youtube Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group linkedin">
+                                                <div class="link-name"><span class="icon fa fa-linkedin"></span> https://www.linkedin.com/</div>
+                                                <input type="text" name="username" placeholder="LinkedIn Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group twitter">
+                                                <div class="link-name"><span class="icon fa fa-twitter-square"></span> https://www.twitter.com/</div>
+                                                <input type="text" name="username" placeholder="Twitter Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group facebook">
+                                                <div class="link-name"><span class="icon fa fa-twitter-square"></span> https://www.facebook.com/</div>
+                                                <input type="text" name="username" placeholder="Facebook Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Save Change</span></button>
+                                                <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span class="txt">Cancel</span></button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--End Comment Form -->
+
+                            </div>
+                        </div>
+
+                        <!-- Tab  -->
+                        <div class="tab" id="prod-privacy">
+                            <h6>Privacy</h6>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                            <div class="content">
+                                <h6>Basic Information</h6>
+                                <div class="text">Add Information about yourself</div>
+
+                                <!-- Setting Form -->
+                                <div class="setting-form">
+                                    <!-- Setting Form -->
+                                    <form method="post" action="search.html">
+                                        <div class="row clearfix">
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                <input type="text" name="username" placeholder="Full Name*" required>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                <input type="email" name="email" placeholder="Email Address*" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <input type="text" name="username" placeholder="I am a UX/ UI Designer" required>
+                                                <label>Add a proffessional headline</label>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <textarea class="" name="message" placeholder="Write a description about you (Maximum 350 words)"></textarea>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group site-input">
+                                                <h6>Profile Links</h6>
+                                                <div class="link-name"><span class="icon fa fa-globe"></span> https://</div>
+                                                <input type="text" name="username" placeholder="yourcompany.mysite.net" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group youtube">
+                                                <div class="link-name"><span class="icon fa fa-youtube-play"></span> https://www.youtube.com/</div>
+                                                <input type="text" name="username" placeholder="Youtube Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group linkedin">
+                                                <div class="link-name"><span class="icon fa fa-linkedin"></span> https://www.linkedin.com/</div>
+                                                <input type="text" name="username" placeholder="LinkedIn Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group twitter">
+                                                <div class="link-name"><span class="icon fa fa-twitter-square"></span> https://www.twitter.com/</div>
+                                                <input type="text" name="username" placeholder="Twitter Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group facebook">
+                                                <div class="link-name"><span class="icon fa fa-twitter-square"></span> https://www.facebook.com/</div>
+                                                <input type="text" name="username" placeholder="Facebook Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Save Change</span></button>
+                                                <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span class="txt">Cancel</span></button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--End Comment Form -->
+
+                            </div>
+                        </div>
+
+                        <!-- Tab  -->
+                        <div class="tab" id="prod-close">
+                            <h6>Close Account</h6>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                            <div class="content">
+                                <h6>Basic Information</h6>
+                                <div class="text">Add Information about yourself</div>
+
+                                <!-- Setting Form -->
+                                <div class="setting-form">
+                                    <!-- Setting Form -->
+                                    <form method="post" action="search.html">
+                                        <div class="row clearfix">
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                <input type="text" name="username" placeholder="Full Name*" required>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                <input type="email" name="email" placeholder="Email Address*" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <input type="text" name="username" placeholder="I am a UX/ UI Designer" required>
+                                                <label>Add a proffessional headline</label>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <textarea class="" name="message" placeholder="Write a description about you (Maximum 350 words)"></textarea>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group site-input">
+                                                <h6>Profile Links</h6>
+                                                <div class="link-name"><span class="icon fa fa-globe"></span> https://</div>
+                                                <input type="text" name="username" placeholder="yourcompany.mysite.net" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group youtube">
+                                                <div class="link-name"><span class="icon fa fa-youtube-play"></span> https://www.youtube.com/</div>
+                                                <input type="text" name="username" placeholder="Youtube Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group linkedin">
+                                                <div class="link-name"><span class="icon fa fa-linkedin"></span> https://www.linkedin.com/</div>
+                                                <input type="text" name="username" placeholder="LinkedIn Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group twitter">
+                                                <div class="link-name"><span class="icon fa fa-twitter-square"></span> https://www.twitter.com/</div>
+                                                <input type="text" name="username" placeholder="Twitter Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group facebook">
+                                                <div class="link-name"><span class="icon fa fa-twitter-square"></span> https://www.facebook.com/</div>
+                                                <input type="text" name="username" placeholder="Facebook Profile" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Save Change</span></button>
+                                                <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span class="txt">Cancel</span></button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--End Comment Form -->
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End Setting Section -->
+{% endblock %}

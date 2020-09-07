@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- Stylesheets -->
+<link href="{%static 'book/css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'book/css/main.css' %}" rel="stylesheet">
+<link href="{% static 'book/css/responsive.css' %}" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- Color Switcher Mockup -->
+<link href="{% static 'book/css/color-switcher-design.css' %}" rel="stylesheet">
+<!-- Color Themes -->
+<link id="theme-color-file" href="{% static 'book/css/theme.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="{% static 'book/images/favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'book/images/favicon.png' %}" type="image/x-icon">
+<title>{% block title %}{% endblock %}</title>
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+</head>
+
+<body class="">
+
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Main Header-->
+    <header class="main-header">
+
+    	<!-- Header Upper -->
+        <div class="header-upper">
+        	<div class="outer-container">
+            	<div class="clearfix">
+
+					<!-- Header Left -->
+					<div class="header-left clearfix">
+
+						<!-- Left Sidebar Btn -->
+					<!-- 	<div class="left-sidebar-btn hidden-bar-opener">
+							<span class="icon flaticon-menu-2"></span>
+						</div> -->
+
+						<div class="pull-left logo-box">
+							<div class="logo"><a href="/"><img src="{% static 'book/images/logo.png' %}" alt="" title="">在线图书馆</a></div>
+							<div class="dark-layout-logo"><a href="/"><img src="images/logo-4.png" alt="" title=""></a></div>
+						</div>
+
+						<!-- Search -->
+                        <div class="search-box">
+                        	<form method="get" action="{% url 'book:search' %}">
+{#                                {% csrf_token %}#}
+                                <div class="form-group">
+                                    <input type="search" name="book_name" value="" placeholder="查找书籍" required="book_name">
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+						</div>
+
+					</div>
+
+					<!-- Header Right -->
+					<div class="header-right clearfix">
+
+						<div class="nav-outer clearfix">
+
+							<!-- Main Menu -->
+							<nav class="main-menu navbar-expand-md">
+								<div class="navbar-header">
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+									<ul class="navigation clearfix">
+										<li><a href="{% url 'book:book_list' %}">全部书籍</a></li>
+										<li><a href="{% url 'book:profile' %}">个人中心</a></li>
+										<li><a href="{% url 'book:manage' %}">管理中心</a></li>
+									</ul>
+								</div>
+
+							</nav>
+
+						</div>
+
+						<!-- Options Box -->
+						<div class="options-box clearfix">
+
+							<!-- Notification Box -->
+							<div class="notification-box">
+								<div class="dropdown">
+									<button class="notification-box-btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-notification"></span><i class="notification-alert"></i></button>
+									<div class="dropdown-menu pull-right cart-panel" aria-labelledby="dropdownMenu">
+
+										<div class="notification-block">
+											<div class="inner">
+												<!-- <div class="image"><img src="images/resource/author-1.jpg" alt="" /></div> -->
+												<h3><a href="#">还书提醒</a></h3>
+												<div class="notification-text">您借的《平凡的世界》即将到期，请注意归还或续借。</div>
+												<div class="post-time">5 min ago</div>
+											</div>
+										</div>
+										<div class="notification-block">
+											<div class="inner">
+												<!-- <div class="image"><img src="images/resource/author-2.jpg" alt="" /></div> -->
+												<h3><a href="#">借书提醒</a></h3>
+												<div class="notification-text">您以成功借到《人性的弱点》。</div>
+												<div class="post-time">10 min ago</div>
+											</div>
+										</div>
+
+										<a href="#" class="view">更多</a>
+
+									</div>
+								</div>
+							</div>
+							<!-- End Notification Box -->
+
+							<!-- Profile Box -->
+							<div class="profile-box dropdown" id="someElementID5">
+								<div class="btn btn-default dropdown-toggle">
+									<span class="profile-image"><img src="{% static 'book/images/resource/author-4.jpg' %}" alt="" /></span> <i class="arrow flaticon-down-arrow"></i>
+								</div>
+								<div class="profile-content">
+{#									<div class="setting"><a href="{% url 'book:setting' %}">Settings</a></div>#}
+{#									<!-- Dark Mode -->#}
+{#									<div class="dark-mode">#}
+{#										<div class="clearfix">#}
+{#											<div class="pull-left">#}
+{#												<div class="mode"><span class="icon"><img src="images/icons/moon.png" alt="" /></span>夜间模式</div>#}
+{#											</div>#}
+{#											<div class="pull-right">#}
+{#												<!-- Dark Btns -->#}
+{#												<ul class="dark-buttons clearfix">#}
+{#													<li data-tab="#" class="off">Off</li>#}
+{#													<li class="boll"><span class="round"></span></li>#}
+{#													<li data-tab="#" class="on">On</li>#}
+{#												</ul>#}
+{#											</div>#}
+{#										</div>#}
+{#									</div>#}
+									<!-- Pages -->
+									<ul class="pages">
+										<li><a href="{% url 'book:login' %}">登录</a></li>
+										<li><a href="{% url 'book:sign_up' %}">注册</a></li>
+										<li><a href="">帮助</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+		<!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon fa fa-remove"></span></div>
+
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+    </header>
+    {% block content %}{% endblock %}
+
+    <footer class="main-footer">
+		<!-- Pattern Layer -->
+		<div class="pattern-layer" style="background-image:url(images/background/pattern-2.png)"></div>
+		<div class="pattern-layer-two" style="background-image:url(images/background/pattern-3.png)"></div>
+			<!-- Footer Bottom -->
+			<div class="footer-bottom text-center">
+				<div class="copyright">Copyright &copy; 2020 图书馆小组</div>
+			</div>
+	</footer>
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+</div>
+
+<script src="{% static 'book/js/jquery.js' %}"></script>
+<script src="{% static 'book/js/popper.min.js' %}"></script>
+<script src="{% static 'book/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'book/js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'book/js/appear.js' %}"></script>
+<script src="{% static 'book/js/isotope.js' %}"></script>
+<script src="{% static 'book/js/owl.js' %}"></script>
+<script src="{% static 'book/js/wow.js' %}"></script>
+<script src="{% static 'book/js/jquery-ui.js' %}"></script>
+<script src="{% static 'book/js/script.js' %}"></script>
+<script src="{% static 'book/js/color-settings.js' %}"></script>
+</body>
+</html>
