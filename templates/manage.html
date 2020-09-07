@@ -26,7 +26,12 @@
                       <th class="post-date" scope="col">{{book.1}}</th>
                       <th class="sales" scope="col">{{book.2}}</th>
                       <th class="category" scope="col">{{book.3}}</th>
-                      <th class="actions" scope="col"><a href="#" class="flaticon-edit-2"></a><a href="#" class="flaticon-trash"></a></th>
+                      <th class="actions" scope="col">
+                          <form action="{% url 'book:delete' %}" method="post">
+                              <input type="hidden" name="book_no" value="{{ book.0 }}">
+                              <input type="submit" value="删除图书" class="flaticon-trash"><input>
+                          </form>
+                      </th>
                     </tr>
                   {% endfor %}
                   </tbody>

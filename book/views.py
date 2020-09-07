@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect,reverse
 from django.db import connection
 from django.http import HttpResponse
 from django.contrib.auth.hashers import make_password,check_password
+from django.contrib.auth import authenticate,login,logout
 
 # Create your views here.
 
@@ -14,9 +15,20 @@ def index(request):
     pass
     return render(request, 'index.html')
 
+# def login_view(request):
+#     reader_no = request.POST.get('reader_no')
+#     reader_password = request.POST.get('reader_password')
+#     msg="账号或密码错误"
+#     user = authenticate(reader_no=reader_no,reader_password=reader_password)
+#     if user is not None:
+#         login(request,user)
+#         return redirect(reverse('book:index'))
+#     else:
+#         pass
+
 def login(request):
     pass
-    return render(request,'login.html')
+    return render(request, 'login.html')
 
 def sign_up(request):
     pass
@@ -41,11 +53,18 @@ def profile(request):
     return render(request, 'profile.html')
 
 def manage(request):
+    cursor = connection.cursor()
+    cursor.execute("select book_no,book_name,publisher,author from book")
+    books = cursor.fetchall()
+    return render(request, 'manage.html', context={'books': books})
+
+def delete(request):
     if request.method == 'POST':
+        book_no = request.POST.get('book_no')
         cursor = connection.cursor()
-        cursor.execute("insert into(book_no,book_name,book_type,book_type,author,publisher,st')")
-        books = cursor.fetchall()
-        return render(request, 'manage.html', context={'books': books})
+        cursor.execute("delete from book_detail where book_no='%s'"%book_no)
+        cursor.execute("delete from book where book_no='%s'"%book_no)
+        return redirect(reverse('book:manage'))
 
 def setting(request):
     pass
