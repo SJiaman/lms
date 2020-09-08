@@ -2,6 +2,8 @@
 
 一个用Django+MySQL搭建的图书馆管理系统，主要用于练习后端操作数据库与前端交互，用的是MySQL的原生语句。
 
+![](https://shijin-img.oss-cn-chengdu.aliyuncs.com/blog-img/图书馆系统展示.gif)
+
 ## 项目环境
 
 + Python 3.7

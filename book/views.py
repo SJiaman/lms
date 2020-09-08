@@ -37,10 +37,14 @@ def sign_up(request):
 def detail(request):
     if request.method == 'GET':
         book = request.GET.get('book_name')
+        msg="抱歉，没有找到书籍"
         cursor = connection.cursor()
         cursor.execute("select book_name,book_type,publisher,author,stock_number,bookstack_no from book where book_name='%s'"%book)
         books = cursor.fetchall()
-        return render(request, 'search.html', context={'books':books})
+        if books:
+            return render(request, 'search.html', context={'books':books})
+        else:
+            return render(request,'search.html', context={'msg':msg})
 
 def book_list(request):
         cursor = connection.cursor()
