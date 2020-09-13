@@ -82,12 +82,22 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'PORT': 3306,
-        'HOST': 'localhost',
-        'NAME': 'lms',
-        'USER': 'root',
-        'PASSWORD': '759260'
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'PORT': 3306,
+        # 'HOST': 'localhost',
+        # 'NAME': 'lms',
+        # 'USER': 'root',
+        # 'PASSWORD': '759260'
+         'NAME': 'lms',
+         'ENGINE': 'sql_server.pyodbc',
+         'HOST': '127.0.0.1',
+         'PORT': '1433',
+         'USER': 'jiaman',
+         'PASSWORD': '759260@sj',
+         'OPTIONS':{
+             'driver':'SQL Server Native Client 11.0',
+             'MARS_Connection': True,
+         }
     }
 }
 

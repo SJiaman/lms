@@ -13,15 +13,17 @@
             <div class="image">
                 <a href="blog-detail.html"><img src="{% static 'book/images/resource/news-1.jpg' %}" alt="" /></a>
             </div>
-            <h6><a href="blog-detail.html">{{ book.0 }}</a></h6>
-            <div class="text">类型：{{ book.1 }}</div>
-             <div class="text">出版社：{{ book.2 }}</div>
-             <div class="text">库存量：{{ book.4 }}</div>
-             <div class="text">书架号：{{ book.5 }}</div>
-             <div class="clearfix"><div class="pull-left"><div class="author">作者：{{ book.3 }}</div></div>
-             <div class="pull-right"><span>借阅次数：11</span></div>
-            </div>
-            <a href="blog-detail.html" class="reading">点击借阅</a>
+             <form action="{% url 'book:borrow_view' %}" method="get">
+                 <input type="hidden" name="book_no" value="{{ book.6 }}">
+                 <h6><a href="blog-detail.html">{{ book.0 }}</a></h6>
+                 <div class="text">类型：{{ book.1 }}</div>
+                 <div class="text">出版社：{{ book.2 }}</div>
+                 <div class="text">库存量：{{ book.4 }}</div>
+                 <div class="text">书架号：{{ book.5 }}</div>
+                 <div class="clearfix"><div class="pull-left"><div class="author">作者：{{ book.3 }}</div></div>
+                </div>
+                <input type="submit" value="立即借书" onclick="myfun3()" class="flaticon-trash"><input>
+             </form>
         </div>
     </div>
 </div>
@@ -41,4 +43,9 @@
         <li class="arrow"><a href="#"><span class="fa fa-angle-right"></span> </a></li>
     </ul>
 </div>
+<script>
+    function myfun3(){
+          window.alert("借书成功！")
+    }
+</script>
 {% endblock %}

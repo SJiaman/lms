@@ -19,44 +19,41 @@
                         <h4>张三</h4>
                         <div class="designation">世界上只有一种真正的英雄主义，那就是在认识生活的真相后依然热爱生活。</div>
 
-                        <!-- Fact Counter -->
-                        <div class="fact-counter">
-                            <div class="row clearfix">
-
-                                <!-- Column -->
-                                <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-                                    <div class="inner">
-                                        <h5 class="counter-title">已借阅</h5>
-                                        <div class="count-outer count-box">
-                                            <span class="count-text" data-speed="2500" data-stop="21">0</span>k
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Column -->
-                                <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-                                    <div class="inner">
-                                        <h5 class="counter-title">带归还</h5>
-                                        <div class="count-outer count-box">
-                                            <span class="count-text" data-speed="3000" data-stop="15">0</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Column -->
-                                <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-                                    <div class="inner">
-                                        <h5 class="counter-title">总借阅</h5>
-                                        <div class="count-outer count-box">
-                                            <span class="count-text" data-speed="3000" data-stop="100">0</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
+{#                        <!-- Fact Counter -->#}
+{#                        <div class="fact-counter">#}
+{#                            <div class="row clearfix">#}
+{##}
+{#                                <!-- Column -->#}
+{#                                <div class="column counter-column col-lg-3 col-md-6 col-sm-12">#}
+{#                                    <div class="inner">#}
+{#                                        <h5 class="counter-title">已借阅</h5>#}
+{#                                        <div class="count-outer count-box">#}
+{#                                            <span class="count-text"></span>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{##}
+{#                                <!-- Column -->#}
+{#                                <div class="column counter-column col-lg-3 col-md-6 col-sm-12">#}
+{#                                    <div class="inner">#}
+{#                                        <h5 class="counter-title">带归还</h5>#}
+{#                                        <div class="count-outer count-box">#}
+{#                                            <span class="count-text" ></span>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{##}
+{#                                <!-- Column -->#}
+{#                                <div class="column counter-column col-lg-3 col-md-6 col-sm-12">#}
+{#                                    <div class="inner">#}
+{#                                        <h5 class="counter-title">总借阅</h5>#}
+{#                                        <div class="count-outer count-box">#}
+{#                                            <span class="count-text" ></span>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
                     </div>
 
                 </div>
@@ -81,8 +78,7 @@
 
                     <!-- Tab Btns -->
                     <ul class="tab-btns tab-buttons clearfix">
-                        <li data-tab="#prod-about" class="active-btn tab-btn">关于我</li>
-                        <li data-tab="#prod-courses" class="tab-btn">借阅详情</li>
+                        <li data-tab="#prod-about" class="active-btn tab-btn">借阅详情</li>
                         <li data-tab="#prod-purchased" class="tab-btn">个人资料</li>
                         <li data-tab="#prod-discussion" class="tab-btn">我的笔记</li>
                     </ul>
@@ -93,17 +89,37 @@
                         <!-- Tab / Active Tab -->
                         <div class="tab active-tab" id="prod-about">
                             <div class="content">
-                                <h6>关于我</h6>
+                                <h6>借阅详情</h6>
                                 <div class="text">
-                                    <p>××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××</p>
+                                    {% for book in books %}
+                                        <div class="news-block">
+                                            <div class="inner-box">
+                                                <div class="content">
+                                                    <div class="image">
+                                                        <a href="#"><img src="{% static 'book/images/resource/news-1.jpg' %}" alt="" /></a>
+                                                    </div>
+                                                    <form action="{% url 'book:return_view' %}" method="get">
+                                                        <input type="hidden" name="book_no" value="{{ book.4 }}">
+                                                        <div style="color: #0e7bfe">书名：{{ book.0 }}</div>
+                                                        <div class="text">借阅时间：{{ book.2 }}</div>
+                                                        <div class="text">归还时间：{{ book.3 }}</div>
+                                                        <div class="clearfix"><div class="pull-left"><div class="author">作者：{{ book.1 }}</div></div>
+                                                        </div>
+                                                         <input type="submit" value="归还图书" onclick="myfun1()" class="flaticon-trash"><input>
+                                                     </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
                                 </div>
+
                             </div>
                         </div>
 
                         <!-- Tab  -->
                         <div class="tab" id="prod-courses">
                             <div class="content">
-                                <h6>借阅详情</h6>
+                                <h6>关于我</h6>
                                 <div class="text">
                                     <p>××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××</p>
                                 </div>
@@ -139,5 +155,10 @@
 
     </div>
 </div>
+<script>
+    function myfun1(){
+          window.alert("还书成功！")
+    }
+</script>
 <!-- End Instructor Page Section -->
 {% endblock %}

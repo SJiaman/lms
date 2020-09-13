@@ -29,7 +29,7 @@
                       <th class="actions" scope="col">
                           <form action="{% url 'book:delete' %}" method="post">
                               <input type="hidden" name="book_no" value="{{ book.0 }}">
-                              <input type="submit" value="删除图书" class="flaticon-trash"><input>
+                              <input type="submit" value="删除图书" onclick="myfun()" class="flaticon-trash">
                           </form>
                       </th>
                     </tr>
@@ -56,5 +56,10 @@
 
     </div>
 </div>
+<script>
+    function myfun(){
+          window.alert("删除成功")
+    }
+</script>
 <!-- End Manage Cource Section -->
 {% endblock %}
